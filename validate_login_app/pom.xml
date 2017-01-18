@@ -33,22 +33,22 @@
   	<suite.file>testng.xml</suite.file>
   </properties>
 <repositories>
+ <repository>
+  	<id>testng</id>
+  	<name>bintray testng</name>
+  	<url>https://mvnrepository.com/artifact/org.testng/testng</url>
+  </repository>
   <repository>
     <id>jcenter</id>
     <name>bintray</name>
     <url>http://repo1.maven.org/maven2/org/seleniumhq/selenium/</url>
-  </repository>
-  <repository>
-  <id>testng</id>
-  <name>bintray testng</name>
-  <url>https://mvnrepository.com/artifact/org.testng/testng</url>
-  </repository>
+  </repository> 
 </repositories>
 <dependencies>
 <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      <version>6.9.8</version>
+      <version>6.9.9</version>
       <scope>test</scope>
     </dependency>
 		<!-- <dependency>

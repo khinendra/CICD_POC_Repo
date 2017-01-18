@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression" duration-ms="19664" started-at="2017-01-18T20:38:00Z" finished-at="2017-01-18T20:38:19Z">
+  <suite name="Default suite" duration-ms="15999" started-at="2017-01-18T21:07:15Z" finished-at="2017-01-18T21:07:31Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="19664" started-at="2017-01-18T20:38:00Z" finished-at="2017-01-18T20:38:19Z">
+    <test name="Default test" duration-ms="15999" started-at="2017-01-18T21:07:15Z" finished-at="2017-01-18T21:07:31Z">
       <class name="com.test.ValidateLogin">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.test.ValidateLogin@2d928643]" name="beforeTest" is-config="true" duration-ms="17845" started-at="2017-01-18T14:38:00Z" finished-at="2017-01-18T14:38:18Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.test.ValidateLogin@ff5b51f]" name="beforeTest" is-config="true" duration-ms="14522" started-at="2017-01-18T15:07:15Z" finished-at="2017-01-18T15:07:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.test.ValidateLogin@2d928643]" name="testLogin" duration-ms="601" started-at="2017-01-18T14:38:18Z" finished-at="2017-01-18T14:38:18Z">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.test.ValidateLogin@ff5b51f]" name="testLogin" duration-ms="350" started-at="2017-01-18T15:07:30Z" finished-at="2017-01-18T15:07:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.test.ValidateLogin@2d928643]" name="afterTest" is-config="true" duration-ms="1153" started-at="2017-01-18T14:38:18Z" finished-at="2017-01-18T14:38:19Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.test.ValidateLogin@ff5b51f]" name="afterTest" is-config="true" duration-ms="1109" started-at="2017-01-18T15:07:30Z" finished-at="2017-01-18T15:07:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.test.ValidateLogin -->
-    </test> <!-- Test -->
-  </suite> <!-- Regression -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
