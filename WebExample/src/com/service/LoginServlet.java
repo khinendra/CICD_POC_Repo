@@ -35,7 +35,9 @@ public class LoginServlet extends HttpServlet {
 		String password = (String)request.getParameter("password");
 		System.out.println("password: "+password);
 		if(user.equalsIgnoreCase("admin") && password.equals("admin")){
-			out.write("<html><body><h1>Welcome Dear : "+user+" </h1></body></html>");
+			out.write("<html><body><h1>Welcome Dear : "+user+" </h1>"
+					+ "<p>Chandan is a good guy</>"+
+					"</body></html>");
 		}else{
 			out.write("<html><body><h1>Login failed. Please check your id/password </h1></body></html>");
 		}
