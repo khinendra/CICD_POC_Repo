@@ -13,6 +13,7 @@ public class ValidateLogin {
 
 @Test
 public void testLogin() {
+	System.out.println("Starting test");
 	WebElement userText = driver.findElement(By.name("username"));
 	WebElement passwordText = driver.findElement(By.name("password"));
 	WebElement submit = driver.findElement(By.xpath("//input[@type=\"submit\"]"));
