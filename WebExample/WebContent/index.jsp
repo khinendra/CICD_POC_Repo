@@ -19,9 +19,8 @@
 <tr>
 <td colspan="2" align="right"><input type="submit" value="Login"></td>
 </tr>
-<p>&R All rights reserved.</p>
 </table>
 </form>
-
+<span>No rights are reserved.</span>
 </body>
 </html>
