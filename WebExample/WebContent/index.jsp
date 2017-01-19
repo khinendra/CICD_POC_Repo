@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body bgcolor="gray">
 <form action="./Login" method="post">
-<table>
+<table border="1">
 <tr><th colspan="2">Login<th></tr>
 <tr>
 <td>User Name:</td><td><input type="text" name="username"></td>
@@ -17,9 +17,9 @@
 <td>Password</td><td><input type="password" name="password"></td>
 </tr>
 <tr>
-<td colspan="2"><input type="submit" value="Login"></td>
+<td colspan="2" align="right"><input type="submit" value="Login"></td>
 </tr>
-
+<p>&R All rights reserved.</p>
 </table>
 </form>
 

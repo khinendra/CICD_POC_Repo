@@ -36,10 +36,12 @@ public class LoginServlet extends HttpServlet {
 		System.out.println("password: "+password);
 		if(user.equalsIgnoreCase("admin") && password.equals("admin")){
 			out.write("<html><body><h1>Welcome Dear : "+user+" </h1>"
-					+ "<p>Chandan is a good guy</>"+
-					"</body></html>");
+					+ "<p>You are a good guy ...</p><hr>");
+			out.write("<h3>Now issue is resolved. </h3>");
+			out.write("<h3>Well done guys.</h3>");
+			out.write("</body></html>");
 		}else{
-			out.write("<html><body><h1>Login failed. Please check your id/password </h1></body></html>");
+			out.write("<html><body><h3>Login failed. Please check your id/password </h3></body></html>");
 		}
 	}
 
