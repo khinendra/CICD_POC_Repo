@@ -6,26 +6,33 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class ValidateLogin {
 	WebDriver driver;
 
 @Test
-public void testLogin() {
+@Parameters({"user","password"})
+public void testLogin(String user, String password) {
 	System.out.println("Starting test");
+	String appURL=System.getProperty("");
+	String driverLocation=System.getProperty("driver.location");
+	System.out.println("App URl :"+appURL);
+	System.out.println("driverLocation :"+driverLocation);
 	WebElement userText = driver.findElement(By.name("username"));
 	WebElement passwordText = driver.findElement(By.name("password"));
 	WebElement submit = driver.findElement(By.xpath("//input[@type=\"submit\"]"));
-	userText.sendKeys("admin");
-	passwordText.sendKeys("admin");
+	userText.sendKeys(user);
+	passwordText.sendKeys(password);
 	submit.click();
 }
 @BeforeTest
-public void beforeTest() {
+@Parameters({"url"})
+public void beforeTest(String url) {
 	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver.exe");
 	driver = new ChromeDriver();
-	driver.get("http://localhost:8080/WebExample/");
+	driver.get(url);
 }
 
 @AfterTest

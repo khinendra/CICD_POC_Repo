@@ -1,5 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Regression">
+<parameter name="url" value="http://localhost:8080/WebExample/"></parameter>
+<parameter name="user" value="admin"></parameter>
+<parameter name="password" value="admin"></parameter>
   <test name="Test">
     <classes>
       <class name="com.test.ValidateLogin"/>

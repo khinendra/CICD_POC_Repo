@@ -17,3 +17,7 @@
 [0118/150353:ERROR:file_io.cc(30)] read: expected 4, observed 0
 [0118/150719:ERROR:file_io.cc(30)] read: expected 4, observed 0
 [0118/150804:ERROR:file_io.cc(30)] read: expected 4, observed 0
+[0118/153125:ERROR:file_io.cc(30)] read: expected 4, observed 0
+[0119/160652:ERROR:file_io.cc(30)] read: expected 4, observed 0
+[0119/160822:ERROR:file_io.cc(30)] read: expected 4, observed 0
+[0120/112130:ERROR:file_io.cc(30)] read: expected 4, observed 0

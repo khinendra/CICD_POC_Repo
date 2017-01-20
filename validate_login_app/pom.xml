@@ -24,6 +24,11 @@
           <suiteXmlFiles>
             <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>
+          <systemPropertyVariables>
+          <config.properties>${env.properties}</config.properties>
+          <webdriver.chrome>${driver.location}</webdriver.chrome>
+          <application.url>${app.url}</application.url>
+          </systemPropertyVariables>
         </configuration>
       </plugin>
     </plugins>

@@ -1,25 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15999" started-at="2017-01-18T21:07:15Z" finished-at="2017-01-18T21:07:31Z">
+  <suite name="Regression" duration-ms="16639" started-at="2017-01-19T22:08:20Z" finished-at="2017-01-19T22:08:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15999" started-at="2017-01-18T21:07:15Z" finished-at="2017-01-18T21:07:31Z">
+    <test name="Test" duration-ms="16639" started-at="2017-01-19T22:08:20Z" finished-at="2017-01-19T22:08:37Z">
       <class name="com.test.ValidateLogin">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.test.ValidateLogin@ff5b51f]" name="beforeTest" is-config="true" duration-ms="14522" started-at="2017-01-18T15:07:15Z" finished-at="2017-01-18T15:07:30Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.test.ValidateLogin@7085bdee]" name="beforeTest" is-config="true" duration-ms="12869" started-at="2017-01-19T16:08:20Z" finished-at="2017-01-19T16:08:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost:8080/WebExample/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.test.ValidateLogin@ff5b51f]" name="testLogin" duration-ms="350" started-at="2017-01-18T15:07:30Z" finished-at="2017-01-18T15:07:30Z">
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.test.ValidateLogin@7085bdee]" name="testLogin" duration-ms="369" started-at="2017-01-19T16:08:33Z" finished-at="2017-01-19T16:08:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.test.ValidateLogin@ff5b51f]" name="afterTest" is-config="true" duration-ms="1109" started-at="2017-01-18T15:07:30Z" finished-at="2017-01-18T15:07:31Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.test.ValidateLogin@7085bdee]" name="afterTest" is-config="true" duration-ms="3376" started-at="2017-01-19T16:08:33Z" finished-at="2017-01-19T16:08:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.test.ValidateLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Regression -->
 </testng-results>
