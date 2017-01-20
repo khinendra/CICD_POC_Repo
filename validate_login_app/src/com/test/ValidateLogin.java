@@ -18,8 +18,13 @@ public void testLogin(String user, String password) {
 	System.out.println("Starting test");
 	String appURL=System.getProperty("app.url");
 	String driverLocation=System.getProperty("driver.location");
+	String jenUsername=System.getProperty("username");
+	String jenPassword=System.getProperty("password");
+	String confFile = System.getProperty("env.properties");
 	System.out.println("App URl :"+appURL);
-	System.out.println("driverLocation :"+driverLocation);
+	System.out.println("driver and config file Location :"+driverLocation+"&"+confFile);
+	System.out.println("Jenkins UserName & password is:"+jenUsername+"&"+jenPassword);
+	
 	WebElement userText = driver.findElement(By.name("username"));
 	WebElement passwordText = driver.findElement(By.name("password"));
 	WebElement submit = driver.findElement(By.xpath("//input[@type=\"submit\"]"));
