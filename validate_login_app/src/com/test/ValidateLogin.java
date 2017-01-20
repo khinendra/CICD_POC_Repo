@@ -16,7 +16,7 @@ public class ValidateLogin {
 @Parameters({"user","password"})
 public void testLogin(String user, String password) {
 	System.out.println("Starting test");
-	String appURL=System.getProperty("");
+	String appURL=System.getProperty("app.url");
 	String driverLocation=System.getProperty("driver.location");
 	System.out.println("App URl :"+appURL);
 	System.out.println("driverLocation :"+driverLocation);
