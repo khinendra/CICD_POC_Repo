@@ -20,7 +20,7 @@ public void testLogin(String user, String password) {
 	String driverLocation=System.getProperty("driver.location");
 	String jenUsername=System.getProperty("username");
 	String jenPassword=System.getProperty("password");
-	String confFile = System.getProperty("env.properties");
+	String confFile = System.getProperty("conf.file");
 	System.out.println("App URl :"+appURL);
 	System.out.println("driver and config file Location :"+driverLocation+"&"+confFile);
 	System.out.println("Jenkins UserName & password is:"+jenUsername+"&"+jenPassword);

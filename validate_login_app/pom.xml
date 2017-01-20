@@ -26,6 +26,7 @@
           </suiteXmlFiles>
           <systemPropertyVariables>
           <config.properties>${env.properties}</config.properties>
+          <config.file>${conf.file}</config.file>
           <webdriver.chrome>${driver.location}</webdriver.chrome>
           <application.url>${app.url}</application.url>
           <application.user>${username}</application.user>
