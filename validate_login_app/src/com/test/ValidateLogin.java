@@ -15,7 +15,7 @@ public class ValidateLogin {
 @Test
 @Parameters({"user","password"})
 public void testLogin(String user, String password) {
-	System.out.println("Starting test1 2 3");
+	System.out.println("Starting test1 2 3 4");
 	
 	String jenUsername=System.getProperty("username");
 	String jenPassword=System.getProperty("password");
