@@ -43,10 +43,12 @@ public void testLogin(String user, String password) {
 	submit.click();
 }
 @BeforeTest
-@Parameters({"url"})
-public void beforeTest(String url) {
+
+public void beforeTest() {
 	String confFile = System.getProperty("conf.file");
+	System.out.println(confFile);
 	File file = new File(confFile);
+	System.out.println(file.getAbsolutePath());
 	FileInputStream fileInput = null;
 	//String appURL2;
 	try {
