@@ -5,7 +5,7 @@
 <parameter name="password" value="admin"></parameter>
   <test name="Test">
     <classes>
-      <class name="com.test.ValidateLogin"/>
+      <class name="com.test.ValidateLogin2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
