@@ -42,6 +42,7 @@ public void beforeTest(String url) {
 	String driverLocation=System.getProperty("driver.location");
 	String env = System.getProperty("app.environment");
 	File file = new File(env+"-config.conf");
+	System.out.println(file.getAbsolutePath());
 	String appURL2=null;
 	FileInputStream fileInput = null;
 	try {
