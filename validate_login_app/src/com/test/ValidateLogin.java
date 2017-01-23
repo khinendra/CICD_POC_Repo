@@ -16,13 +16,10 @@ public class ValidateLogin {
 @Parameters({"user","password"})
 public void testLogin(String user, String password) {
 	System.out.println("Starting test1 2 3");
-	String appURL=System.getProperty("app.url");
-	String driverLocation=System.getProperty("driver.location");
+	
 	String jenUsername=System.getProperty("username");
 	String jenPassword=System.getProperty("password");
-	String confFile = System.getProperty("conf.file");
-	System.out.println("App URl :"+appURL);
-	System.out.println("driver and config file Location :"+driverLocation+"&"+confFile);
+	
 	System.out.println("Jenkins UserName & password is:"+jenUsername+"&"+jenPassword);
 	
 	WebElement userText = driver.findElement(By.name("username"));
@@ -35,6 +32,11 @@ public void testLogin(String user, String password) {
 @BeforeTest
 @Parameters({"url"})
 public void beforeTest(String url) {
+	String appURL=System.getProperty("app.url");
+	String driverLocation=System.getProperty("driver.location");
+	String confFile = System.getProperty("conf.file");
+	System.out.println("App URl :"+appURL);
+	System.out.println("driver and config file Location :"+driverLocation+"&"+confFile);
 	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver.exe");
 	driver = new ChromeDriver();
 	driver.get(url);
