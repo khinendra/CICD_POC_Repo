@@ -1,5 +1,11 @@
 package com.test;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,12 +40,29 @@ public void testLogin(String user, String password) {
 public void beforeTest(String url) {
 	String appURL=System.getProperty("app.url");
 	String driverLocation=System.getProperty("driver.location");
-	String confFile = System.getProperty("conf.file");
+	String env = System.getProperty("app.environment");
+	File file = new File(env+"-config.conf");
+	String appURL2=null;
+	FileInputStream fileInput = null;
+	try {
+		fileInput = new FileInputStream(file);
+	} catch (FileNotFoundException e) {
+		e.printStackTrace();
+	}
+	Properties prop = new Properties();
+	
+	//load properties file
+	try {
+		prop.load(fileInput);
+		appURL2=prop.getProperty("application.url");
+	} catch (IOException e) {
+		e.printStackTrace();
+	}
 	System.out.println("App URl :"+appURL);
-	System.out.println("driver and config file Location :"+driverLocation+"&"+confFile);
+	System.out.println("driver and config file Location :"+driverLocation+"&"+env);
 	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver.exe");
 	driver = new ChromeDriver();
-	driver.get(url);
+	driver.get(appURL2);
 }
 
 @AfterTest
