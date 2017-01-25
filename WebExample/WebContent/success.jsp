@@ -8,7 +8,7 @@
 </head>
 <body>
 success<br>
-<label id="wc">Welcome:</label> 
+<label id="wc">Welcome:aaaaa</label> 
 <label id="usrnm"><%=request.getAttribute("user") %></label>
 
 </body>
