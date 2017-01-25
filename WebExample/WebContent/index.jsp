@@ -21,6 +21,6 @@
 </tr>
 </table>
 </form>
-<span>No rights are reserved.</span>
+<span>No rights are reserved.....</span>
 </body>
 </html>
