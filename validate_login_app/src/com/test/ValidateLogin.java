@@ -38,7 +38,7 @@ public void testLogin(String user, String password) {
 @BeforeTest
 @Parameters({"url"})
 public void beforeTest(String url) {
-	String appURL=System.getProperty("app.url");
+	//String appURL=System.getProperty("app.url");
 	String driverLocation=System.getProperty("driver.location");
 	String env = System.getProperty("app.environment");
 	File file = new File(System.getProperty("user.dir")+"/"+env+"-config.conf");
@@ -59,10 +59,11 @@ public void beforeTest(String url) {
 	} catch (IOException e) {
 		e.printStackTrace();
 	}
-	System.out.println("App URl :"+appURL);
+	//System.out.println("App URl :"+appURL);
 	System.out.println("driver and config file Location :"+driverLocation+"&"+env);
 	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver.exe");
 	driver = new ChromeDriver();
+	System.out.println("Hitting the URL:"+appURL2);
 	driver.get(appURL2);
 }
 

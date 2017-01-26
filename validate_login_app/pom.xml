@@ -27,8 +27,7 @@
           <systemPropertyVariables>
           <config.properties>${env.properties}</config.properties>
           <config.file>${app.environment}</config.file>
-          <webdriver.chrome>${driver.location}</webdriver.chrome>
-          <application.url>${app.url}</application.url>
+          <webdriver.chrome>${driver.location}</webdriver.chrome>         
           <application.user>${username}</application.user>
           <application.password>${password}</application.password>
           </systemPropertyVariables>
