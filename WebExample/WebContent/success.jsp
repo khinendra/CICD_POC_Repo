@@ -8,8 +8,8 @@
 </head>
 <body>
 success<br>
-<label id="wc">Welcome:aaaaa</label> 
-<label id="usrnm"><%=request.getAttribute("user") %></label>
+<label id="wc">Welcome:</label> 
+<h1><label id="usrnm"><%=request.getAttribute("user") %></label></h1>
 
 </body>
 </html>

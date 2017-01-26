@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body bgcolor="gray">
-<h1>This is my Login Page...</h1>
+<h3>This is my Login Page...</h3>
 <form action="./Login" method="post">
 <table border="1">
 <tr><th colspan="2">Login<th></tr>
