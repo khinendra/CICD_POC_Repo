@@ -70,10 +70,10 @@ public void beforeTest(String url) {
 @AfterTest
 public void afterTest() {
 	try {
-		Thread.sleep(1000);
+		Thread.sleep(20000);
 	} catch (InterruptedException e) {
 		System.out.println(e.getMessage());
 	}
-	driver.close();
+	driver.quit();
 }
 }
