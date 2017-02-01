@@ -36,12 +36,7 @@ public class LoginServlet extends HttpServlet {
 		String password = (String)request.getParameter("password");
 		System.out.println("password: "+password);
 		RequestDispatcher rd = null;
-		if(user.equalsIgnoreCase("admin") && password.equals("admin")){
-			out.write("<html><body><h1>Welcome Dear : "+user+" </h1>"
-					+ "<p>You are a good guy ...</p><hr>");
-			out.write("<h3>Now issue is resolved. </h3>");
-			out.write("<h3>Well done guys.</h3>");
-			out.write("</body></html>");
+		if(user.equalsIgnoreCase("admin") && password.equals("admin")){			
 			request.setAttribute("user", user);
 			rd = request.getRequestDispatcher("./success.jsp");
 		}else{
