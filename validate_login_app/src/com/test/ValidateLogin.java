@@ -33,6 +33,11 @@ public void testLogin(String user, String password) {
 	WebElement submit = driver.findElement(By.xpath("//input[@type=\"submit\"]"));
 	userText.sendKeys(user);
 	passwordText.sendKeys(password);
+	try {
+		Thread.sleep(10000);
+	} catch (InterruptedException e) {
+		System.out.println(e.getMessage());
+	}
 	submit.click();
 }
 @BeforeTest
@@ -70,7 +75,7 @@ public void beforeTest(String url) {
 @AfterTest
 public void afterTest() {
 	try {
-		Thread.sleep(20000);
+		Thread.sleep(10000);
 	} catch (InterruptedException e) {
 		System.out.println(e.getMessage());
 	}
