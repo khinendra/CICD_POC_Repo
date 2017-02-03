@@ -9,4 +9,11 @@ public class TestWebService implements EmployeeService {
 		return fullName;
 	}
 
+	@Override
+	public String getEmployeeAddress(String loginname) {
+		Employee emp = new Employee(loginname);
+		String address = emp.getAddress();
+		return address;
+	}
+
 }

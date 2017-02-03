@@ -4,6 +4,20 @@
 Built on Apr 22, 2006 (06:55:48 PDT)-->
  <wsdl:types>
   <schema elementFormDefault="qualified" targetNamespace="http://test.ws.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="getEmployeeAddress">
+    <complexType>
+     <sequence>
+      <element name="loginname" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getEmployeeAddressResponse">
+    <complexType>
+     <sequence>
+      <element name="getEmployeeAddressReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
    <element name="getEmplyeeName">
     <complexType>
      <sequence>
@@ -20,6 +34,22 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
    </element>
   </schema>
  </wsdl:types>
+
+   <wsdl:message name="getEmployeeAddressRequest">
+
+      <wsdl:part element="impl:getEmployeeAddress" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getEmployeeAddressResponse">
+
+      <wsdl:part element="impl:getEmployeeAddressResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
 
    <wsdl:message name="getEmplyeeNameRequest">
 
@@ -39,6 +69,18 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
    <wsdl:portType name="TestWebService">
 
+      <wsdl:operation name="getEmployeeAddress">
+
+         <wsdl:input message="impl:getEmployeeAddressRequest" name="getEmployeeAddressRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getEmployeeAddressResponse" name="getEmployeeAddressResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
       <wsdl:operation name="getEmplyeeName">
 
          <wsdl:input message="impl:getEmplyeeNameRequest" name="getEmplyeeNameRequest">
@@ -56,6 +98,24 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
    <wsdl:binding name="TestWebServiceSoapBinding" type="impl:TestWebService">
 
       <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getEmployeeAddress">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getEmployeeAddressRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getEmployeeAddressResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
 
       <wsdl:operation name="getEmplyeeName">
 
@@ -81,7 +141,7 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       <wsdl:port binding="impl:TestWebServiceSoapBinding" name="TestWebService">
 
-         <wsdlsoap:address location="http://localhost:8080/WebServiceProject/services/TestWebService"/>
+         <wsdlsoap:address location="http://localhost:8082/WebServiceProject/services/TestWebService"/>
 
       </wsdl:port>
 

@@ -7,8 +7,8 @@
   <ns1:parameter name="dotNetSoapEncFix" value="true"/>
   <ns1:parameter name="enableNamespacePrefixOptimization" value="false"/>
   <ns1:parameter name="sendXMLDeclaration" value="true"/>
-  <ns1:parameter name="sendXsiTypes" value="true"/>
   <ns1:parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <ns1:parameter name="sendXsiTypes" value="true"/>
   <ns1:requestFlow>
    <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
     <ns1:parameter name="scope" value="session"/>
@@ -33,10 +33,13 @@
   <ns1:parameter name="className" value="org.apache.axis.Version"/>
  </ns1:service>
  <ns1:service name="TestWebService" provider="java:RPC" style="wrapped" use="literal">
-  <ns2:operation name="getEmplyeeName" qname="ns1:getEmplyeeName" returnQName="ns1:getEmplyeeNameReturn" returnType="xsd:string" soapAction="" xmlns:ns1="http://test.ws.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://xml.apache.org/axis/wsdd/">
+  <ns2:operation name="getEmployeeAddress" qname="ns1:getEmployeeAddress" returnQName="ns1:getEmployeeAddressReturn" returnType="xsd:string" soapAction="" xmlns:ns1="http://test.ws.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://xml.apache.org/axis/wsdd/">
    <ns2:parameter qname="ns1:loginname" type="xsd:string"/>
   </ns2:operation>
-  <ns1:parameter name="allowedMethods" value="getEmplyeeName"/>
+  <ns1:operation name="getEmplyeeName" qname="ns2:getEmplyeeName" returnQName="ns2:getEmplyeeNameReturn" returnType="xsd:string" soapAction="" xmlns:ns2="http://test.ws.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns2:loginname" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="getEmployeeAddress getEmplyeeName"/>
   <ns1:parameter name="typeMappingVersion" value="1.2"/>
   <ns1:parameter name="wsdlPortType" value="TestWebService"/>
   <ns1:parameter name="className" value="com.ws.test.TestWebService"/>
