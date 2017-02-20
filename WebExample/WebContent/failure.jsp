@@ -8,5 +8,6 @@
 </head>
 <body>
 <h2>failed to login.</h2>
+<%=request.getAttribute("customMessage") %>
 </body>
 </html>

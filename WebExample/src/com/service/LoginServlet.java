@@ -36,13 +36,18 @@ public class LoginServlet extends HttpServlet {
 		String password = (String)request.getParameter("password");
 		System.out.println("password: "+password);
 		RequestDispatcher rd = null;
+		String message = null;
 		if(user.equalsIgnoreCase("admin") && password.equals("admin")){			
 			request.setAttribute("user", user);
+			message = "You are welcome.....";
 			rd = request.getRequestDispatcher("./success.jsp");
 		}else{
+			message = "failed to login";
 			out.write("<html><body><h3>Login failed. Please check your id/password </h3></body></html>");
 			rd = request.getRequestDispatcher("failure.jsp");
 		}
+		
+		request.setAttribute("customMessage", message);
 		rd.forward(request, response);
 	}
 
