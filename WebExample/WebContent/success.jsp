@@ -10,6 +10,6 @@
 success<br>
 <label id="wcp12">Welcome:::</label> 
 <h1><label id="usrnm"><%=request.getAttribute("user") %></label></h1>
-
+<%=request.getAttribute("customMessage") %>
 </body>
 </html>
