@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Login Success Pagetitle>
+<title>Login Success Page</title>
 </head>
 <body>
 success<br>
-<label id="wcp12">Welcome:::</label> 
+<label id="wcp12">Welcome:::::::::::::::::::::::::::::>>>>>>>>>>>></label> 
 <h1><label id="usrnm"><%=request.getAttribute("user") %></label></h1>
 <%=request.getAttribute("customMessage") %>
 </body>
