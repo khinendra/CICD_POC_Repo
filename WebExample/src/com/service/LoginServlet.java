@@ -32,14 +32,14 @@ public class LoginServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		String user = (String)request.getParameter("username");
-		System.out.println("Welcome Dear...: "+user);
+		System.out.println("Welcome Dear...kkk: "+user);
 		String password = (String)request.getParameter("password");
 		System.out.println("password: "+password);
 		RequestDispatcher rd = null;
 		String message = null;
 		if(user.equalsIgnoreCase("admin") && password.equals("admin")){			
 			request.setAttribute("user", user);
-			message = "You are welcome...??????????????";
+			message = "You are welcome.";
 			rd = request.getRequestDispatcher("./success.jsp");
 		}else{
 			message = "failed to login.";
