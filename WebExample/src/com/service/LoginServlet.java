@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
 		String message = null;
 		if(user.equalsIgnoreCase("admin") && password.equals("admin")){			
 			request.setAttribute("user", user);
-			message = "You are welcome.....";
+			message = "You are welcome.....jkjkjk";
 			rd = request.getRequestDispatcher("./success.jsp");
 		}else{
 			message = "failed to login.";
