@@ -23,5 +23,6 @@
 </table>
 </form>
 <span>No rights are reserved.....?????????</span>
+<h3>Some Message can go here.</h3>
 </body>
 </html>
