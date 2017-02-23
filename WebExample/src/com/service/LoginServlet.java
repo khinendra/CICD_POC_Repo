@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
 			rd = request.getRequestDispatcher("./success.jsp");
 		}else{
 			message = "failed to login.";
-			out.write("<html><body><h3>Login failed. Please check your id/password. </h3></body></html>");
+			out.write("<html><body><h3>Login failed. Did you enter your correct credentials? Please check your id/password. </h3></body></html>");
 			rd = request.getRequestDispatcher("failure.jsp");
 		}
 		
