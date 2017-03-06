@@ -22,7 +22,7 @@
 </tr>
 </table>
 </form>
-<span>No rights are reserved.....?????????</span>
+<span>CICD Demo</span>
 <h3>Some Message can go here.</h3>
 </body>
 </html>
