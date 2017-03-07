@@ -22,7 +22,7 @@
 </tr>
 </table>
 </form>
-<span>CICD Demo with commit and push</span>
+<span>CICD Demo!!</span>
 <h3>Some Message can go here.</h3>
 </body>
 </html>
