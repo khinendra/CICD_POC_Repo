@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Login Failed</title>
 </head>
-<body>
+<body bgcolor="gray">
 <h2>failed to  @@@@@@@@@@.</h2>
 <%=request.getAttribute("customMessage") %>
 </body>
