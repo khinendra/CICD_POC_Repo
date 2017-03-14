@@ -22,7 +22,7 @@
 </tr>
 </table>
 </form>
-<span>CICD Demo testing sucessfully..</span>
+<span>CICD Demo testing sucessfully...........</span>
 <h3>Some Message can go here.</h3>
 </body>
 </html>
